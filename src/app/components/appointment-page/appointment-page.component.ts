@@ -14,7 +14,7 @@ export class AppointmentPageComponent implements OnInit {
 
   appointment : IAppointment = {
     appointmentId: 0,
-    doctor: 0,
+    patient: 0,
     appointmentTime: 0,
     hospitalName: '',
     hospitalAddress: '',
@@ -55,7 +55,7 @@ export class AppointmentPageComponent implements OnInit {
     }
     var userIdNumber = parseInt(this.cookieService.get('userId'));
 
-    this.appointment.doctor = userIdNumber;
+    this.appointment.patient = userIdNumber;
     this.appointment.hospitalName = data.hospitalName;
     this.appointment.appointmentTime = data.appointmentTime;
     this.appointment.hospitalAddress = data.hospitalAddress;

@@ -1,0 +1,18 @@
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <mat-panel-title><h1>{{appointment.hospitalName}}</h1></mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>Address: {{appointment.hospitalAddress}}</p>
+    <p>Appointment on: {{appointment.appointmentTime}}</p>
+    <p>Appointment made by: {{appointment.patient}}</p>
+    <p>Appointment Status: {{appointment.appointmentStatus}}</p>
+
+    <!--
+    <button *ngIf="isManager()" mat-button (click)="openInfo()">Customer Info</button>
+    <button *ngIf="isManager() || !isServed() && !isCancelled()" mat-button (click)="openUpdate()">Update</button>
+    <button *ngIf="isManager() || !isServed() && !isCancelled()" mat-button (click)="confirmCancel()">Cancel</button>
+    <button *ngIf="isManager()" mat-button (click)="confirmApprove()">Approve</button>
+    <button *ngIf="isManager()" mat-button (click)="confirmDeny()">Deny</button>
+    <button *ngIf="isManager()" mat-button (click)="confirmServe()">Serve</button>
+    <button *ngIf="isCustomer() && isServed()" mat-button (click)="openRate()">Rate</button>-->
+</mat-expansion-panel>

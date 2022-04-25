@@ -1,0 +1,11 @@
+<div fxLayoutAlign="center center">
+    <mat-button-toggle-group name="status">
+        <mat-button-toggle (click)="viewAll()">All</mat-button-toggle>
+        <mat-button-toggle (click)="viewPending()">Pending</mat-button-toggle>
+        <mat-button-toggle (click)="viewServed()">Served</mat-button-toggle>
+    </mat-button-toggle-group>
+</div>
+<mat-accordion>
+    <app-appointment *ngFor="let appointment of (appointments | async)" [appointment]="appointment">
+    </app-appointment>
+</mat-accordion>
